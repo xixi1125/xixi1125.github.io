@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5G技术原理与架构 - 中国智造科技成就</title>
+    <link rel="stylesheet" href="../css/style.css">
+	<style>
+	    .article-content h2, .article-content h3 {
+	        margin-top: 2em;
+	        margin-bottom: 0.5em;
+	    }
+	    
+	    .article-content img {
+	        max-width: 100%;
+	        height: auto;
+	        margin: 1em 0;
+	    }
+	    
+	    .login-modal-content input[type="text"], .login-modal-content input[type="password"] {
+	        display: block;
+	        width: 100%;
+	        padding: 0.5em;
+	        margin: 0.5em 0;
+	        border: 1px solid #ccc;
+	        border-radius: 4px;
+	    }
+	    
+	    .login-modal-content button {
+	        background-color: #4CAF50;
+	        color: white;
+	        padding: 0.7em 1.5em;
+	        margin: 1em 0;
+	        border: none;
+	        border-radius: 4px;
+	        cursor: pointer;
+	    }
+	</style>
+</head>
+<body>
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <img src="../images/logo1.png" alt=" “中国智造”科技成就">
+                 “中国智造”科技成就
+            </div>
+            <div class="header-right">
+                <span>科技引领未来，创新驱动发展</span>
+            </div>
+        </div>
+    </header>
+
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="../index.html">首页</a></li>
+                <li><a href="5g.html" class="active">5G技术</a></li>
+                <li><a href="beidou.html">北斗导航</a></li>
+                <li><a href="railway.html">高铁科技</a></li>
+                <li><a href="about.html">关于我们</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <article class="article">
+            <div class="article-header">
+                <h1 class="article-title">5G技术原理与架构</h1>
+                <div class="article-meta">
+                    发布日期：2025年6月20日 | 作者：李锡俊
+                </div>
+            </div>
+            
+            <div class="article-content">
+                <img src="../images/5g-tech-detail.jpg" alt="5G技术架构图">
+                
+                <h2>一、5G技术概述</h2>
+                <p>5G是第五代移动通信技术的简称，是4G（第四代移动通信技术）的延伸，具有更高的数据传输速率、更低的时延、更大的系统容量和更高的连接密度。5G的三大应用场景包括增强型移动宽带（eMBB）、超高可靠低时延通信（uRLLC）和海量机器类通信（mMTC）。</p>
+                
+                <p>5G网络的理论峰值下载速度可达20Gbps，是4G网络的20倍；时延可低至1毫秒，是4G网络的1/50；连接密度可达每平方公里100万个设备，是4G网络的100倍。这些技术指标的大幅提升，为各行各业的数字化转型提供了强大支撑。</p>
+                
+                <h2>二、5G关键技术</h2>
+                
+                <h3>1. 新型网络架构</h3>
+                <p>5G采用服务化架构（SBA），将网络功能解耦为独立的网络功能服务，通过统一的接口相互通信，实现网络功能的灵活组合和按需部署。同时，5G引入网络切片技术，可根据不同业务需求，在同一物理网络上创建多个逻辑网络，为不同应用场景提供差异化服务。</p>
+                
+                <h3>2. 新型空口技术</h3>
+                <p>5G采用新型空口（NR）技术，支持更灵活的帧结构、更高效的编码调制方式和更先进的多址接入技术。其中，5G采用极化码和LDPC码作为信道编码方案，采用大规模MIMO和波束赋形技术提升频谱效率，采用非正交多址接入技术提升系统容量。</p>
+                
+                <h3>3. 毫米波通信</h3>
+                <p>5G引入毫米波频段（24GHz-100GHz），大幅扩展可用频谱资源。毫米波具有波长短、频率高、带宽大的特点，可提供超高速率的数据传输，但同时面临传播损耗大、穿透能力弱、覆盖范围小等挑战，需要通过波束赋形、小区密集化等技术解决。</p>
+                
+                <h3>4. 边缘计算</h3>
+                <p>5G网络结合边缘计算技术，将计算资源下沉至网络边缘，减少数据传输距离和时延，提升服务响应速度和用户体验。边缘计算在自动驾驶、工业互联网、增强现实等对时延敏感的应用场景中具有重要价值。</p>
+                
+                <h2>三、5G网络架构</h2>
+                
+                <h3>1. 5G核心网</h3>
+                <p>5G核心网采用服务化架构，主要包括接入与移动性管理功能（AMF）、会话管理功能（SMF）、用户面功能（UPF）、统一数据管理（UDM）、网络切片选择功能（NSSF）等网络功能实体。这些功能实体通过服务化接口相互通信，实现网络功能的灵活组合和按需部署。</p>
+                
+                <h3>2. 5G接入网</h3>
+                <p>5G接入网由下一代基站（gNB）组成，负责无线信号的收发和处理。5G基站采用集中式部署和分布式部署相结合的方式，将基带处理单元（BBU）和射频拉远单元（RRU）分离，实现资源池化和灵活组网。</p>
+                
+                <h3>3. 网络切片</h3>
+                <p>网络切片是5G网络的重要特性，可根据不同业务需求，在同一物理网络上创建多个逻辑网络，为不同应用场景提供差异化服务。例如，为自动驾驶提供低时延高可靠的网络切片，为视频直播提供高带宽的网络切片，为物联网提供大连接的网络切片。</p>
+                
+                <h2>四、中国在5G技术领域的贡献</h2>
+                <p>中国在5G技术研发和标准制定方面做出了重要贡献。在国际标准组织3GPP的5G标准制定中，中国企业提交的技术提案数量居世界前列，多项关键技术被采纳为国际标准。同时，中国在5G技术研发、设备制造、网络建设和应用推广等方面也走在世界前列。</p>
+                
+                <p>截至2025年，中国已建成全球规模最大的5G网络，5G基站数量超过500万个，5G用户数量超过8亿，5G应用场景不断丰富，有力推动了经济社会数字化转型。</p>
+                
+                <h2>五、5G技术的未来发展</h2>
+                <p>随着5G技术的不断成熟，未来将向更高频段、更低时延、更智能化方向发展。同时，5G与人工智能、大数据、云计算、边缘计算等技术的深度融合，将催生更多创新应用和商业模式，推动各行各业的数字化转型和智能化升级。</p>
+                
+                <p>此外，6G技术研究已经启动，预计将在2030年左右商用。6G将进一步提升网络性能，实现空天地海一体化覆盖，支持全息通信、数字孪生等更加先进的应用场景，开启万物智联的新时代。</p>
+            </div>
+        </article>
+    </div>
+
+    
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>关于我们</h3>
+                    <ul>
+                        <li><a href="about.html">网站简介</a></li>
+                        <li><a href="about.html#contact">联系方式</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>技术领域</h3>
+                    <ul>
+                        <li><a href="5g.html">5G技术</a></li>
+                        <li><a href="beidou.html">北斗导航</a></li>
+                        <li><a href="railway.html">高铁科技</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>友情链接</h3>
+                    <ul>
+                        <li><a href="http://www.most.gov.cn/" target="_blank">中国科技部</a></li>
+                        <li><a href="http://www.miit.gov.cn/" target="_blank">工业和信息化部</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                 © 2025 李锡俊 | 联系方式：952078446@qq.com
+            </div>
+        </div>
+    </footer>
+	<!-- 登录按钮 -->
+		<div class="login-btn">登录</div>
+		
+		<!-- 登录浮窗 -->
+		<div class="login-modal">
+		    <div class="login-modal-content slide-down">
+		        <span class="close-btn">&times;</span>
+		        <h2>用户登录</h2>
+		        <form class="login-form">
+		            <input type="text" placeholder="用户名" required>
+		            <input type="password" placeholder="密码" required>
+		            <button type="submit">登录</button>
+		        </form>
+		    </div>
+		</div>
+	</footer>
+	<script>
+	    const loginBtn = document.querySelector('.login-btn');
+	    const modal = document.querySelector('.login-modal');
+	    const modalContent = document.querySelector('.login-modal-content');
+	    const closeBtn = document.querySelector('.close-btn');
+	
+	    // 显示浮窗并触发动画
+	    loginBtn.addEventListener('click', () => {
+	        modal.style.display = 'block';
+	        setTimeout(() => {
+	            modalContent.classList.add('slide-down');
+	        }, 10); // 延迟触发动画
+	    });
+	
+	    // 关闭浮窗 - 点击 ×
+	    closeBtn.addEventListener('click', () => {
+	        modalContent.classList.remove('slide-down');
+	        setTimeout(() => {
+	            modal.style.display = 'none';
+	        }, 500); // 动画结束后隐藏
+	    });
+	
+	    // 关闭浮窗 - 点击遮罩层
+	    window.addEventListener('click', (e) => {
+	        if (e.target === modal) {
+	            modalContent.classList.remove('slide-down');
+	            setTimeout(() => {
+	                modal.style.display = 'none';
+	            }, 500);
+	        }
+	    });
+	</script>
+</body>
+</html> 

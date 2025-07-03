@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5G技术 - 中国智造科技成就</title>
+    <link rel="stylesheet" href="../css/style.css">
+	<style>
+		/* 新增图片变形特效 */
+		        .list-item-img {
+		            position: relative;
+		            overflow: hidden;
+		            transition: all 0.4s ease;
+		            transform-style: preserve-3d;
+		        }
+		        
+		        .list-item-img::before {
+		            content: '';
+		            position: absolute;
+		            top: 0;
+		            left: 0;
+		            width: 100%;
+		            height: 100%;
+		            background: linear-gradient(45deg, rgba(0,102,204,0.3), rgba(0,102,204,0.1));
+		            opacity: 0;
+		            transition: opacity 0.4s ease;
+		            z-index: 1;
+		        }
+		        
+		        .list-item-img::after {
+		            content: '';
+		            position: absolute;
+		            top: 0;
+		            left: 0;
+		            width: 100%;
+		            height: 100%;
+		            background: inherit;
+		            background-size: cover;
+		            background-position: center;
+		            transition: all 0.6s cubic-bezier(0.25, 0.45, 0.45, 0.95);
+		            transform-origin: center center;
+		        }
+		        
+		        .list-item:hover .list-item-img {
+		            transform: translateY(-10px);
+		            box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+		        }
+		        
+		        .list-item:hover .list-item-img::after {
+		            transform: scale(1.15) perspective(1000px) rotateX(2deg) rotateY(2deg);
+		            filter: brightness(1.05);
+		        }
+		        
+		        .list-item:hover .list-item-img::before {
+		            opacity: 1;
+		        }
+		        
+		        /* 微调原有样式 */
+		        .list-item {
+		            transition: all 0.4s ease;
+		            border-radius: 12px;
+		            overflow: hidden;
+		        }
+		        
+		        .list-item:hover {
+		            transform: translateY(-5px);
+		        }
+		        
+		        .list-item-content {
+		            padding: 25px;
+		        }
+		        
+		        .btn {
+		            transition: all 0.3s ease;
+		        }
+		        
+		        .btn:hover {
+		            transform: translateY(-2px);
+		            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+		        }
+		        
+		        /* 响应式调整 */
+		        @media (max-width: 768px) {
+		            .list-item-img::after {
+		                transition: all 0.4s ease;
+		            }
+		            
+		            .list-item:hover .list-item-img::after {
+		                transform: scale(1.2);
+		            }
+		        }
+	</style>
+</head>
+<body>
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <img src="../images/logo1.png" alt=" “中国智造”科技成就">
+                 “中国智造”科技成就
+            </div>
+            <div class="header-right">
+                <span>科技引领未来，创新驱动发展</span>
+            </div>
+        </div>
+    </header>
+
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="../index.html">首页</a></li>
+                <li><a href="5g.html" class="active">5G技术</a></li>
+                <li><a href="beidou.html">北斗导航</a></li>
+                <li><a href="railway.html">高铁科技</a></li>
+                <li><a href="about.html">关于我们</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <section class="section">
+            <h1 class="section-title">5G技术</h1>
+            <p style="text-align: center; max-width: 800px; margin: 0 auto 30px;font-size: 22px; font-family: 'Microsoft YaHei', sans-serif; color: #333;">
+                5G是第五代移动通信技术的简称，具有高速率、低延时和大连接特点，
+                是新一代信息技术的重要基础，将推动经济社会数字化、网络化、智能化发展。
+            </p>
+        </section>
+    </div>
+
+    <div class="container">
+        <div class="list-container">
+            <div class="list-item">
+                <div class="list-item-img" style="background-image: url('../images/5g-tech.jpg');"></div>
+                <div class="list-item-content">
+                    <h3>5G技术原理与架构</h3>
+                    <p class="date">2025年6月20日</p>
+                    <p>5G网络采用新型网络架构，包括新空口、新频谱、新波形、新多址等关键技术，实现了超高速率、超低时延、超大连接的性能指标。本文详细介绍5G技术的基本原理和网络架构。</p>
+                    <a href="5g-tech.html" class="btn">阅读全文</a>
+                </div>
+            </div>
+            
+            <div class="list-item">
+                <div class="list-item-img" style="background-image: url('../images/5g-application.jpg');"></div>
+                <div class="list-item-content">
+                    <h3>5G应用场景与行业变革</h3>
+                    <p class="date">2025年6月15日</p>
+                    <p>5G技术将广泛应用于智慧城市、工业互联网、车联网、远程医疗等领域，带来行业深刻变革。本文分析5G技术在各行业的应用场景及其带来的变革。</p>
+                    <a href="5g-application.html" class="btn">阅读全文</a>
+                </div>
+            </div>
+            
+            <div class="list-item">
+                <div class="list-item-img" style="background-image: url('../images/5g-global.jpg');"></div>
+                <div class="list-item-content">
+                    <h3>中国5G发展与全球影响</h3>
+                    <p class="date">2025年6月10日</p>
+                    <p>中国在5G标准制定、技术研发、网络建设和应用推广方面走在世界前列，为全球5G发展做出重要贡献。本文分析中国5G发展历程及其对全球的影响。</p>
+                    <a href="5g-global.html" class="btn">阅读全文</a>
+                </div>
+            </div>
+            
+            <div class="list-item">
+                <div class="list-item-img" style="background-image: url('../images/5g-future.jpg');"></div>
+                <div class="list-item-content">
+                    <h3>5G与未来通信技术展望</h3>
+                    <p class="date">2025年6月5日</p>
+                    <p>随着5G技术的不断成熟，6G研究已经启动。本文展望5G技术的未来发展方向及其与6G、人工智能、量子通信等前沿技术的融合趋势。</p>
+                    <a href="5g-future.html" class="btn">阅读全文</a>
+                </div>
+            </div>
+            
+            <div class="list-item">
+                <div class="list-item-img" style="background-image: url('../images/5g-security.jpg');"></div>
+                <div class="list-item-content">
+                    <h3>5G网络安全与隐私保护</h3>
+                    <p class="date">2025年6月1日</p>
+                    <p>5G时代网络安全面临新挑战，需要构建全方位、多层次的安全防护体系。本文分析5G网络安全风险及防护措施，探讨隐私保护的技术手段和法律保障。</p>
+                    <a href="5g-security.html" class="btn">阅读全文</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>关于我们</h3>
+                    <ul>
+                        <li><a href="about.html">网站简介</a></li>
+                        <li><a href="about.html#contact">联系方式</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>技术领域</h3>
+                    <ul>
+                        <li><a href="5g.html">5G技术</a></li>
+                        <li><a href="beidou.html">北斗导航</a></li>
+                        <li><a href="railway.html">高铁科技</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>友情链接</h3>
+                    <ul>
+                        <li><a href="http://www.most.gov.cn/" target="_blank">中国科技部</a></li>
+                        <li><a href="http://www.miit.gov.cn/" target="_blank">工业和信息化部</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                © 2025 李锡俊 | 联系方式：952078446@qq.com
+            </div>
+        </div>
+		<!-- 登录按钮 -->
+			<div class="login-btn">登录</div>
+			
+			<!-- 登录浮窗 -->
+			<div class="login-modal">
+			    <div class="login-modal-content slide-down">
+			        <span class="close-btn">&times;</span>
+			        <h2>用户登录</h2>
+			        <form class="login-form">
+			            <input type="text" placeholder="用户名" required>
+			            <input type="password" placeholder="密码" required>
+			            <button type="submit">登录</button>
+			        </form>
+			    </div>
+			</div>
+		</footer>
+		<script>
+		    const loginBtn = document.querySelector('.login-btn');
+		    const modal = document.querySelector('.login-modal');
+		    const modalContent = document.querySelector('.login-modal-content');
+		    const closeBtn = document.querySelector('.close-btn');
+		
+		    // 显示浮窗并触发动画
+		    loginBtn.addEventListener('click', () => {
+		        modal.style.display = 'block';
+		        setTimeout(() => {
+		            modalContent.classList.add('slide-down');
+		        }, 10); // 延迟触发动画
+		    });
+		
+		    // 关闭浮窗 - 点击 ×
+		    closeBtn.addEventListener('click', () => {
+		        modalContent.classList.remove('slide-down');
+		        setTimeout(() => {
+		            modal.style.display = 'none';
+		        }, 500); // 动画结束后隐藏
+		    });
+		
+		    // 关闭浮窗 - 点击遮罩层
+		    window.addEventListener('click', (e) => {
+		        if (e.target === modal) {
+		            modalContent.classList.remove('slide-down');
+		            setTimeout(() => {
+		                modal.style.display = 'none';
+		            }, 500);
+		        }
+		    });
+		</script>
+    </footer>
+</body>
+</html> 
